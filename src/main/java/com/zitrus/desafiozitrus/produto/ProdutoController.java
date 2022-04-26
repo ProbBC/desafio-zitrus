@@ -68,8 +68,8 @@ public class ProdutoController {
     }
 
     @PutMapping(value="/{id}")
-    public ResponseEntity update(@PathVariable("id") long id, @Valid @RequestBody Produto produto) {
-        Produto updated = produtoService.findById(id);
+    public ResponseEntity update(@PathVariable("id") long id, @Valid @RequestBody ProdutoDTO produtoDTO) {
+        Produto updated = produtoService.update(id, mapper.produtoDTOToProduto(produtoDTO));
         if (updated != null) {
             return ResponseEntity.ok().body(mapper.produtoToProdutoDTO(updated));
         }
