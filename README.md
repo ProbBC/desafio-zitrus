@@ -48,9 +48,9 @@ Segue abaixo exemplos de requisições:
 - /produtos/{id} (PUT) - Altera um produto
 ```json
 {
-	"descricao": "notebook ryzen 5",
-	"tipoProduto": "eletronico",
-	"valorFornecedor": 3000
+  "descricao": "notebook ryzen 5",
+  "tipoProduto": "eletronico",
+  "valorFornecedor": 3000
 }
 ```
 - /produtos{id} (DELETE) - Deleta um produto
@@ -64,10 +64,10 @@ Segue abaixo exemplos de requisições:
 - /movimento-estoque (POST) - Cria um movimento de estoque
 ```json
 {
-	"produto": {"id": 1},
-	"tipoMovimentacao": "entrada",
-	"valorVenda": 1200,
-	"qtdMovimentada": 2
+  "produto": {"id": 1},
+  "tipoMovimentacao": "entrada",
+  "valorVenda": 1200,
+  "qtdMovimentada": 2
 }
 ```
 - /movimento-estoque/{id} (DEL) - Deleta um movimento de estoque
