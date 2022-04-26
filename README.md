@@ -7,7 +7,7 @@ O Projeto foi desenvolvido utilizando Maven, Spring Boot, Java 11 e MySQL
 2. Rode na raiz do projeto:
 
 ```bash
-docker-compose up -d
+docker-compose up
 ```
 
 3. O container fará o download das dependencias do projeto para depois inicializar a aplicação, isso pode demorar um pouco.
@@ -32,7 +32,7 @@ mvn spring-boot:run
 
 A aplicação escuta APIs RESTful em 2 contextos: produtos e movimento-estoque.
 
-Foi disponibilzado um arquivo de configuração do Insomnia para facilitar os testes (Insomnia.json).
+Foi disponibilzado um arquivo de configuração (Collection) do Insomnia para facilitar os testes (Insomnia.json).
 
 Segue abaixo exemplos de requisições:
 ### produtos
