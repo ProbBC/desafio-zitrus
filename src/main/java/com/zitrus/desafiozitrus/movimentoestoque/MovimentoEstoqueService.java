@@ -69,7 +69,6 @@ public class MovimentoEstoqueService {
         Produto produto = movimentoEstoque.getProduto();
 
         produto.getMovimentosEstoque().remove(movimentoEstoque);
-        System.out.println(produto.getMovimentosEstoque());
         if (movimentoEstoque.getTipoMovimentacao() == MovimentoEstoqueTipos.ENTRADA) {
             produto.setQtdEstoque(produto.getQtdEstoque() - movimentoEstoque.getQtdMovimentada());
         } else {
